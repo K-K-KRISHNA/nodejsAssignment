@@ -1,0 +1,35 @@
+
+GET http://localhost:3000/todos/3
+
+###
+GET http://localhost:3000/todos/?priority=HARD
+
+###
+DELETE http://localhost:3000/todos/2
+
+###
+#API 3
+GET http://localhost:3000/agenda/?date=2021-02-22
+
+###
+POST http://localhost:3000/todos/
+Content-Type: application/json
+
+{
+ "id": 6,
+ "todo": "Finalize event theme",
+ "priority": "LOW",
+ "status": "TO DO",
+ "category": "HOME",
+ "dueDate": "2021-02-22"
+}
+
+###
+#API 5
+
+PUT  http://localhost:3000/todos/4
+Content-Type: application/json
+
+{
+    "priority":"LOW"
+}
